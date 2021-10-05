@@ -43,7 +43,7 @@ public class AddressBookRepo {
                 contactInfo.setEmailId(resultSet.getString("email"));
                 contactInfo.setBookName(resultSet.getString("bookName"));
                 contactInfo.setContactType(resultSet.getString("contactType"));
-                contactInfo.setDateAdded(resultSet.getDate("Date_added").toLocalDate());
+                contactInfo.setDateAdded(resultSet.getDate("dateAdded").toLocalDate());
 
                 addressBookList.add(contactInfo);
             }
